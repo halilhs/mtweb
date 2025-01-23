@@ -1,0 +1,1496 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitoris</title>
+    <!-- Local Bootstrap CSS -->
+    <link href="inc/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="inc/css/slick.css" rel="stylesheet" />
+    <link href="inc/css/slick-theme.css" rel="stylesheet" />
+    <link href="inc/css/style.css" rel="stylesheet" />
+    <link href="inc/css/responsive.css" rel="stylesheet" />
+
+    <!-- Added for 100+ functions -->
+
+    <link
+      rel="preload"
+      href="/assets/js/libs/swiper-bundle.min.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="/assets/js/helpers/swiper-helper.js"
+      as="script"
+    />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <!-- Added for 100+ functions -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="inc/images/nav-logo.svg"
+            alt="Logo"
+            class="nav-logo d-inline-block align-text-top"
+          />
+        </a>
+
+        <!-- Toggler for responsive design -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#solutions">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#functions">Functions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact_us">Contact us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="div-icon-lang">
+                <img src="/inc/images/languages-icon.svg" alt="world icon" />
+              </div>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END: Navbar -->
+    <!-- Section: Hero -->
+    <section class="section-dark-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="hero-content text-left">
+              <h5>Get more done in less time</h5>
+              <h1>The future of intelligent Billing with AI Invoicing</h1>
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="hero-image-holder">
+              <img src="/inc/images/first-hero-img.svg" alt="Hero Image 1" />
+            </div>
+          </div>
+          <div class="col-md-6 p-0">
+            <div class="hero-image-holder">
+              <img src="/inc/images/second-hero-img.svg" alt="Hero Image 2" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="hero-description d-flex justify-content-center align-items-center"
+            >
+              <div class="centered-content">
+                <p>
+                  Act quickly. Record all the necessary details by delivering
+                  invoices and payments in real time.
+                </p>
+                <a href="#" class="btn-large-gray mb-2"
+                  >Enter your work email</a
+                >
+                <a href="#" class="btn-large-light-green">Join the waitlist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-icons">
+          <div class="row">
+            <div class="col-md-3">
+              <div
+                class="icon-holder d-flex justify-content-center align-items-center"
+              >
+                <img src="/inc/images/ai-native.png" alt="AI Native" />
+                <span>AI Native</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="icon-holder d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/inc/images/image-recognition.png"
+                  alt="Image Recognition"
+                />
+                <span>Image Recognition</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="icon-holder d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/inc/images/speech-recognition.png"
+                  alt="Speech Recognition"
+                />
+                <span>Speech Recognition</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="icon-holder icon-holder-noborder d-flex justify-content-center align-items-center"
+              >
+                <img src="/inc/images/geolocation.png" alt="Geolocation" />
+                <span>Geolocation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Section: Hero -->
+    <!-- Section: About Us -->
+    <section id="about_us" class="section-white">
+      <div class="container">
+        <div class="col-md-8">
+          <h5>About Us</h5>
+          <h2 class="mb-5">Grow with AI-Driven<br />Invoicing Solutions</h2>
+          <p>
+            Welcome to the future of invoicing. Say goodbye to the manual,
+            time-consuming billing processes that slow your business down. With
+            AI Native Invoicing, you're empowered with intelligent automation
+            designed to streamline your invoicing workflow, reduce errors, and
+            boost your productivity. We’re not just improving invoicing—we’re
+            transforming how businesses manage their time and data.
+          </p>
+        </div>
+        <div class="col-md-12">
+          <div class="video-holder">
+            <img src="/inc/images/large-video.png" alt="Video Placeholder" />
+            <!-- <div class="play-button">
+                        <img src="/inc/images/play-button.svg" alt="Play Button">
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: About Us -->
+    <!-- Section: Features -->
+    <section id="features" class="section-white">
+      <div class="container">
+        <div class="col-12 pb-5">
+          <h5>Features</h5>
+          <h2 class="mb-5">Build to adapt all needs of businesses</h2>
+          <p>
+            Offers a unified platform that fosters innovation while providing
+            end-to-end data management.<br />See how we help your business solve
+            today’s biggest challenges.
+          </p>
+        </div>
+        <div class="row pt-5">
+          <div class="col-md-6">
+            <div>
+              <img src="/inc/images/iphone-img.png" alt="Mobile Features" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    <span class="accordion-icon p-18">
+                      <img
+                        src="/inc/images/circle-heart 1.png"
+                        class="me-3"
+                        alt="circle-heart.png"
+                      />
+                      Chat Based Invoicing Workflow
+                    </span>
+                    <i class="toggle-icon">+</i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam, tempore voluptate! A corporis dolorem expedita porro
+                    recusandae ad quis, exercitationem at similique officiis
+                    minus molestias asperiores laboriosam quaerat quidem
+                    dignissimos.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <span class="accordion-icon p-18">
+                      <img
+                        src="/inc/images/photo-capture.png"
+                        class="me-3"
+                        alt="photo-capture.png"
+                      />
+                      Expense Management with Photo Capture
+                    </span>
+                    <i class="toggle-icon">+</i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus fugit explicabo similique fuga animi eveniet
+                    incidunt beatae ducimus vel quia? Doloremque esse eos
+                    similique nostrum eum repellendus. Itaque, animi
+                    dignissimos!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <span class="accordion-icon p-18">
+                      <img
+                        src="/inc/images/map-marker-smile 1.png"
+                        class="me-3"
+                        alt="ap-marker-smile 1.png"
+                      />
+                      Automated Customer Identification via Geolocation
+                    </span>
+                    <i class="toggle-icon">+</i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quia mollitia ut suscipit. Tenetur sint nesciunt repellendus
+                    itaque in deleniti laudantium, dolor soluta asperiores
+                    pariatur quibusdam minima, autem magni, placeat iusto.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <span class="accordion-icon p-18">
+                      <img
+                        src="/inc/images/calculator 1.png"
+                        class="me-3"
+                        alt="calculator 1.png"
+                      />
+                      Smart Rate Calculation and Dynamic Pricing
+                    </span>
+                    <i class="toggle-icon">+</i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dignissimos expedita libero debitis qui dolorem mollitia,
+                    totam autem laborum reprehenderit fugit reiciendis ex
+                    eveniet accusamus vero, aut at impedit est culpa!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    <span class="accordion-icon p-18">
+                      <img
+                        src="/inc/images/error-prevention.png"
+                        class="me-3"
+                        alt="error-prevention.png"
+                      />
+                      Intelligent Review and Error Prevention
+                    </span>
+                    <i class="toggle-icon">+</i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ullam molestias rerum aut. Asperiores deleniti voluptatum,
+                    cum ea nisi reprehenderit iste ex molestiae a cupiditate
+                    tempore cumque nam consequuntur eos odio.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    <span class="accordion-icon p-18">
+                      <img
+                        src="/inc/images/shield-check 1.png"
+                        class="me-3"
+                        alt="shield-check 1.png"
+                      />
+                      Secure Digital Archive and Bookkeeping integration
+                    </span>
+                    <i class="toggle-icon">+</i>
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit iure temporibus recusandae impedit earum harum.
+                    Rerum aliquid blanditiis officiis mollitia et laborum,
+                    distinctio esse facere illo molestias reprehenderit nihil
+                    magnam.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Section: Features -->
+    <!-- Section: Solutions -->
+    <section id="solutions" class="section-green">
+      <div class="container">
+        <h5>Solutions</h5>
+        <h2 class="mb-3">AI-Powered Invoice Solutions</h2>
+        <p>
+          Step into the future with our AI Invoice Solutions. Designed for
+          versatility across all sectors.
+        </p>
+        <div class="row boxes-container g-1">
+          <!-- Box 1 -->
+          <div class="col-md-4">
+            <div class="box p-5">
+              <div class="box-icon mb-4">
+                <img src="/inc/images/ai-assistent.png" alt="AI Assistent" />
+              </div>
+              <h4 class="p-18">AI Assistent</h4>
+              <p class="p-16">
+                Real-time support and guidance offering customers help with
+                troubleshooting, inquiries, and navigation on the go for a
+                smooth, hassle- free experience.
+              </p>
+            </div>
+          </div>
+          <!-- Box 2 -->
+          <div class="col-md-4">
+            <div class="box p-5">
+              <div class="box-icon mb-4">
+                <img
+                  src="/inc/images/seamless-integration.png"
+                  alt="Seamless Integration"
+                />
+              </div>
+              <h4 class="p-18">Seamless Integration</h4>
+              <p class="p-16">
+                Our platform integrates smoothly with your existing accounting
+                systems, CRMs, and payment gateways, making the transition to AI
+                invoicing hassle-free
+              </p>
+            </div>
+          </div>
+          <!-- Box 3 -->
+          <div class="col-md-4">
+            <div class="box p-5 box-noBorder box-noBorder-bottom">
+              <div class="box-icon mb-4">
+                <img
+                  src="/inc/images/client-specific-customizations.png"
+                  alt="Client Specific Customizations"
+                />
+              </div>
+              <h4 class="p-18">Client Specific Customizations</h4>
+              <p class="p-16">
+                Personalize invoices for different clients with customized
+                templates, tax calculations, and payment terms. AI ensures these
+                preferences are applied automatically.
+              </p>
+            </div>
+          </div>
+          <!-- Box 4 -->
+          <div class="col-md-4">
+            <div class="box p-5 box-noBorder-bottom">
+              <div class="box-icon mb-4">
+                <img
+                  src="/inc/images/ai-powered-forecasting.png"
+                  alt="AI-Powered Forecasting"
+                />
+              </div>
+              <h4 class="p-18">AI-Powered Forecasting</h4>
+              <p class="p-16">
+                Predict payment trends, identify potential bottlenecks, and
+                manage your finances better with intelligent forecasting
+                features.
+              </p>
+            </div>
+          </div>
+          <!-- Box 5 -->
+          <div class="col-md-4">
+            <div class="box p-5 box-noBorder-bottom">
+              <div class="box-icon mb-4">
+                <img
+                  src="/inc/images/multi-currency-and-language-support.png"
+                  alt=""
+                />
+              </div>
+              <h4 class="p-18">Multi-Currency and Language Support</h4>
+              <p class="p-16">
+                Expand your global reach with automatic currency conversions and
+                multi-language invoicing capabilities
+              </p>
+            </div>
+          </div>
+          <!-- Box 6 -->
+          <div class="col-md-4">
+            <div
+              class="box box-light-green p-5 box-noBorder box-noBorder-bottom"
+            >
+              <h4 class="box-title">
+                Elevating billing through intelligence and automation
+              </h4>
+              <p class="p-16">Manage your businesses with AI Automation</p>
+              <a href="#" class="btn-box mt-4">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Section: Solutions -->
+    <!-- Section: Solutions 2 -->
+    <section id="solutions2" class="section-white text-center">
+      <div class="container">
+        <h5>Solutions</h5>
+        <h2 class="mb-3">AI Native<br />Invoicing</h2>
+      </div>
+    </section>
+
+    <!-- Section start -->
+    <div
+      id="builder_elements"
+      class="builder-elements section panel"
+      style="background-color: #1e1e1c"
+    >
+      <div class="section-outer panel pb-6 lg:pb-8 xl:pb-10">
+        <div class="container xl:max-w-xl">
+          <div
+            class="section-inner panel vstack items-center gap-3 xl:gap-4 text-center max-w-100"
+            data-anime="onview: -100; targets: > *; translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(200);"
+          >
+            <h5 style="color: white">Functions</h5>
+            <h3 class="mb-3" style="color: white">
+              100+ Functions included with Monitoris
+            </h3>
+            <div class="panel w-100">
+              <div
+                class="swiper mask-x"
+                data-uc-swiper="items: 2.5; gap: 16; center: true; center-bounds: true; autoplay: 7000; loop: true; speed: 7000; autoplay-delay: -1; autoplay-disableOnInteraction: true; allowTouchMove: false;"
+                data-uc-swiper-m="items: 3; gap: 20;"
+                data-uc-swiper-l="items: 5; gap: 24;"
+              >
+                <div class="swiper-wrapper items-center ease-linear">
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190; padding: 10px"
+                        >Section</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Column</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Div</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Heading</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Form</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Button</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Divider</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Spacer</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper mask-x my-2 md:my-3"
+                data-uc-swiper="items: 2.5; gap: 16; center: true; center-bounds: true; autoplay: 7000; loop: true; speed: 7000; autoplay-delay: -1; autoplay-disableOnInteraction: true; autoplay-reverseDirection: true; allowTouchMove: false;"
+                data-uc-swiper-m="items: 3; gap: 20;"
+                data-uc-swiper-l="items: 5; gap: 24;"
+              >
+                <div class="swiper-wrapper items-center ease-linear">
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Divider</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Spacer</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Image</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Video</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Map</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Charts</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Blog Posts</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Portfolio</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper mask-x"
+                data-uc-swiper="items: 2.5; gap: 16; center: true; center-bounds: true; autoplay: 7000; loop: true; speed: 7000; autoplay-delay: -1; autoplay-disableOnInteraction: true; allowTouchMove: false;"
+                data-uc-swiper-m="items: 3; gap: 20;"
+                data-uc-swiper-l="items: 5; gap: 24;"
+              >
+                <div class="swiper-wrapper items-center ease-linear">
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Video</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Map</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Charts</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Blog Posts</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Portfolio</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Ecommerce</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Text Content</span
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="cstack gap-1 md:gap-2 p-3 md:p-2 rounded-pill"
+                      style="background-color: #222220"
+                    >
+                      <span
+                        class="fs-7 md:fs-6 lg:fs-5 fw-medium"
+                        style="color: #919190"
+                        >Popups</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section end -->
+
+    <!-- END Section: Solutions 2 -->
+    <!-- Section: Functions -->
+    <section id="functions" class="section-dark-gray text-center">
+      <div class="container">
+        <!-- first slider -->
+        <div class="container">
+          <h2 class="text-center my-4">UI Components</h2>
+          <div class="slick-slider second-slider">
+            <div class="ui-button">
+              <i class="bi bi-columns"></i>
+              <span>Column</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-layout-sidebar"></i>
+              <span>Div</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-type"></i>
+              <span>Heading</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-card-text"></i>
+              <span>Form</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-mouse"></i>
+              <span>Button</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-image"></i>
+              <span>Image</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-play-circle"></i>
+              <span>Video</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-geo-alt"></i>
+              <span>Map</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-pie-chart"></i>
+              <span>Charts</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-file-earmark-text"></i>
+              <span>Blog Posts</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-briefcase"></i>
+              <span>Portfolio</span>
+            </div>
+            <div class="ui-button">
+              <i class="bi bi-bag"></i>
+              <span>Ecommerce</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- second slider -->
+        <div class="mt-5">
+          <h2 class="text-center mb-4">Image Slider</h2>
+          <div class="slider">
+            <div>
+              <img src="https://via.placeholder.com/800x400" alt="Slide 1" />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/800x400/ff7f7f"
+                alt="Slide 2"
+              />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/800x400/87ceeb"
+                alt="Slide 3"
+              />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/800x400/daa520"
+                alt="Slide 4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Section: Functions -->
+    <!-- Section: Contact Us -->
+    <section id="contact_us" class="section-misty-grey text-center">
+      <div class="container">
+        <h5>Questions</h5>
+        <h3 class="mb-3">Contact us</h3>
+        <p>
+          Feel free to reach out to us using the options below, and our
+          dedicated<br />team will respond to your inquiries promptly.
+        </p>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="col-8 pt-5">
+            <form class="contact-form">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <!-- <label for="firstName" class="form-label">First name <span class="text-danger">*</span></label> -->
+                  <input
+                    type="text"
+                    class="form-control p"
+                    id="firstName"
+                    placeholder="First name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <!-- <label for="lastName" class="form-label">Last name <span class="text-danger">*</span></label> -->
+                  <input
+                    type="text"
+                    class="form-control p"
+                    id="lastName"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <!-- <label for="phoneNumber" class="form-label">Phone Number <span class="text-danger">*</span></label> -->
+                  <input
+                    type="tel"
+                    class="form-control p"
+                    id="phoneNumber"
+                    placeholder="Phone number"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <!-- <label for="emailAddress" class="form-label">E-mail address <span class="text-danger">*</span></label> -->
+                  <input
+                    type="email"
+                    class="form-control p"
+                    id="emailAddress"
+                    placeholder="Email address"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <!-- <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label> -->
+                <textarea
+                  class="form-control p"
+                  id="message"
+                  rows="4"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-send btn-small mt-5">
+                Send Message
+              </button>
+              <p class="p-16 pt-3">
+                Or drop us a message via
+                <a href="mailto:example@example.com" class="a-mailto">email</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Section: Contact Us -->
+    <!-- Section: FAQ -->
+    <section id="faq" class="section-white text-center">
+      <div class="container">
+        <h5>Answers</h5>
+        <h2 class="pb-5">Frequently Asked<br />Questions</h2>
+        <div class="d-flex justify-content-center pt-3">
+          <div class="col-7">
+            <div class="accordion" id="accordionExample">
+              <!-- Accordion Items -->
+              <div class="accordion-item faq-accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                  <button
+                    class="accordion-button p-18 fw-normal"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1"
+                    aria-expanded="true"
+                    aria-controls="collapse1"
+                  >
+                    <span class="me-4 span-28">1.</span>What is AI Invoicing and
+                    how does it work?<span class="ms-auto icon">+</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapse1"
+                  class="accordion-collapse collapse text-start show"
+                  aria-labelledby="heading1"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16 ps-5 pe-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio, sunt sequi perspiciatis quasi illo similique
+                    exercitationem fuga magni possimus magnam, quis nulla?
+                    Officia minus tempore iusto dolore, dolores aut quae.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item faq-accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                  <button
+                    class="accordion-button collapsed p-18 fw-normal"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse2"
+                    aria-expanded="false"
+                    aria-controls="collapse2"
+                  >
+                    <span class="me-4 span-28">2.</span>Can AI Invoicing be
+                    integrated into other systems?<span class="ms-auto icon"
+                      >+</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapse2"
+                  class="accordion-collapse collapse text-start"
+                  aria-labelledby="heading2"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16 ps-5 pe-5">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Optio itaque eius delectus laudantium numquam odit officia,
+                    adipisci quis excepturi fugiat facere possimus tempora at
+                    non repellendus. Iste animi aut laboriosam?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item faq-accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                  <button
+                    class="accordion-button collapsed p-18 fw-normal"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse3"
+                    aria-expanded="false"
+                    aria-controls="collapse3"
+                  >
+                    <span class="me-4 span-28">3.</span>Can AI invoicing process
+                    transactions in multiple currencies?<span
+                      class="ms-auto icon"
+                      >+</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapse3"
+                  class="accordion-collapse collapse text-start"
+                  aria-labelledby="heading3"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16 ps-5 pe-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas distinctio placeat quis aliquam natus odio, dolore
+                    numquam, deserunt accusamus, labore exercitationem aperiam
+                    explicabo quisquam. Alias eaque provident beatae incidunt.
+                    Nam?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item faq-accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                  <button
+                    class="accordion-button collapsed p-18 fw-normal"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse4"
+                    aria-expanded="false"
+                    aria-controls="collapse4"
+                  >
+                    <span class="me-4 span-28">4.</span>How does expense
+                    recording via image work?<span class="ms-auto icon">+</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapse4"
+                  class="accordion-collapse collapse text-start"
+                  aria-labelledby="heading4"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16 ps-5 pe-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident debitis, laborum et, quasi consequatur blanditiis
+                    quae quia necessitatibus sunt maiores excepturi, explicabo
+                    beatae aliquam tempora quis adipisci! Earum, iure ullam!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item faq-accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                  <button
+                    class="accordion-button collapsed p-18 fw-normal"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse5"
+                    aria-expanded="false"
+                    aria-controls="collapse5"
+                  >
+                    <span class="me-4 span-28">5.</span>Can I categorize
+                    expenses automatically?<span class="ms-auto icon">+</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapse5"
+                  class="accordion-collapse collapse text-start"
+                  aria-labelledby="heading5"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16 ps-5 pe-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Velit fugit soluta doloremque modi ut aut perferendis
+                    exercitationem voluptates animi corporis ullam non, hic
+                    expedita autem facere architecto sed esse nisi?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item faq-accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                  <button
+                    class="accordion-button collapsed p-18 fw-normal"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse6"
+                    aria-expanded="false"
+                    aria-controls="collapse6"
+                  >
+                    <span class="me-4 span-28">6.</span>How does geolocation
+                    work when searching for my customers?<span
+                      class="ms-auto icon"
+                      >+</span
+                    >
+                  </button>
+                </h2>
+                <div
+                  id="collapse6"
+                  class="accordion-collapse collapse text-start"
+                  aria-labelledby="heading6"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16 ps-5 pe-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Impedit quae explicabo in! Magni, aspernatur eius eum,
+                    soluta impedit alias, doloribus a ipsum dolor amet
+                    repellendus ut sed dolorem quis esse?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item faq-accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                  <button
+                    class="accordion-button collapsed p-18 fw-normal"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse7"
+                    aria-expanded="false"
+                    aria-controls="collapse7"
+                  >
+                    <span class="me-4 span-28">7.</span>Can I use geolocation to
+                    send localized offers?<span class="ms-auto icon">+</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapse7"
+                  class="accordion-collapse collapse text-start"
+                  aria-labelledby="heading7"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16 ps-5 pe-5">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Tempora eum ducimus nam blanditiis, consequuntur debitis est
+                    ex porro! Reprehenderit commodi quam aut hic quae a maiores
+                    fugit veritatis et? Obcaecati!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item faq-accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                  <button
+                    class="accordion-button collapsed p-18 fw-normal"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse8"
+                    aria-expanded="false"
+                    aria-controls="collapse8"
+                  >
+                    <span class="me-4 span-28">8.</span>Is the AI solution
+                    safe?<span class="ms-auto icon">+</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapse8"
+                  class="accordion-collapse collapse text-start"
+                  aria-labelledby="heading8"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body p-16 ps-5 pe-5">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nobis vel vitae dignissimos itaque iure minima accusamus,
+                    aperiam nemo sapiente fugit cumque necessitatibus deserunt
+                    veritatis ex maiores rerum quis esse dolore.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Section: FAQ -->
+    <!-- Section: Footer -->
+    <footer class="section-dark-gray">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text-center">
+            <img src="/inc/images/footer-logo.svg" alt="Footer Logo" />
+            <p class="p-16 pt-2">
+              Save time and simplify your invoicing processes with us!
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center pt-4">
+          <div class="col-8">
+            <div class="d-flex">
+              <input
+                type="text"
+                class="form-control me-5 footer-input p-16"
+                placeholder="Enter your work email"
+              />
+              <button class="btn-small btn-small-style" type="button">
+                Join the waitlist
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center pt-5">
+          <div class="col-8">
+            <div class="row">
+              <div class="col-5">
+                <p class="p-copyright">
+                  Monitoris © 2024. All rights reserved.
+                </p>
+              </div>
+              <div class="col-7 d-flex justify-content-end align-items-center">
+                <div class="d-flex align-items-center footer-links">
+                  <a href="#" class="me-3 text-decoration-none"
+                    ><img src="/inc/images/facebook.png"
+                  /></a>
+                  <a href="#" class="me-3 text-decoration-none"
+                    ><img src="/inc/images/instagram.png"
+                  /></a>
+                  <a href="#" class="me-3 text-decoration-none"
+                    >Privacy Policy</a
+                  >
+                  <a href="#" class="me-3 text-decoration-none">Cookies</a>
+                </div>
+                <div>
+                  <div class="nav-item dropdown">
+                    <div class="div-icon-lang me-2">
+                      <img
+                        src="/inc/images/languages-icon.svg"
+                        alt="world icon"
+                      />
+                    </div>
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      English
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Section: Footer -->
+
+    <!-- Local Bootstrap JS -->
+    <script src="inc/js/bootstrap.bundle.min.js"></script>
+    <script src="inc/js/jquery.js"></script>
+    <script src="inc/js/slick.min.js"></script>
+    <script src="inc/js/scripts.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".accordion-button").on("click", function () {
+          const icon = $(this).find(".toggle-icon");
+          if ($(this).hasClass("collapsed")) {
+            icon.text("+");
+          } else {
+            icon.text("−");
+          }
+        });
+
+        $(".slider").slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows: true,
+        });
+
+        //  $('.slick-slider.second-slider').slick({
+        //      infinite: true,
+        //      slidesToShow: 4,
+        //      slidesToScroll: 1,
+        //      arrows: false,
+        //      dots: false,
+        //      autoplay: true,
+        //      autoplaySpeed: 0,
+        //      cssEase: 'linear',
+        //      speed: 5000,
+        //      responsive: [
+        //          {
+        //          breakpoint: 768,
+        //          settings: {
+        //              slidesToShow: 2
+        //          }
+        //          },
+        //          {
+        //          breakpoint: 576,
+        //          settings: {
+        //              slidesToShow: 1
+        //          }
+        //          }
+        //      ]
+        //  });
+
+        $(".slick-slider.second-slider").slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: -1, //Negative value to reverse direction
+          arrows: false,
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 0,
+          cssEase: "linear",
+          speed: 5000,
+          pauseOnHover: false, // Prevents pausing on hover
+          pauseOnFocus: false, // Prevents pausing on focus
+          draggable: false, // Disables dragging to prevent direction reversal
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+
+        //Use CSS tricks to flip the scroll direction
+        $(".slick-slider.second-slider .slick-track").css({
+          transform: "translateX(100%)",
+          direction: "ltr",
+        });
+
+        // Force slider to play immediately on load (fixing the initial delay issue)
+        setTimeout(() => {
+          $(".slick-slider.second-slider").slick("slickPlay");
+        }, 10);
+
+        // Prevent slider from reversing direction after interactions
+        $(".slick-slider.second-slider").on("afterChange", function () {
+          $(this).slick("slickPlay");
+        });
+      });
+    </script>
+
+    <!-- Added for 100+ functions -->
+    <script defer src="/assets/js/libs/swiper-bundle.min.js"></script>
+    <script defer src="/assets/js/helpers/data-attr-helper.js"></script>
+    <script defer src="/assets/js/helpers/swiper-helper.js"></script>
+    <!-- Added for 100+ functions -->
+  </body>
+</html>
