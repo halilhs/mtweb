@@ -1,0 +1,263 @@
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Font size - Headers, paragraphs */
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 35px;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 20px;
+      }
+      h5 {
+        font-size: 11px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+      .p-18 {
+        font-size: 16px;
+        line-height: 26px;
+      }
+      .p-16 {
+        font-size: 15px;
+        line-height: 30px;
+      }
+      /* Buttons */
+    .btn-large-gray,
+    .btn-large-light-green {
+        padding: 15px 17px;
+        font-size: 15px;
+        text-align: center;
+    }
+    /* Sections */
+    .section-dark-gray,
+    .section-green,
+    .section-white,
+    .section-misty-grey {
+        padding: 30px 0;
+    }
+    /* Hero Section */
+    .centered-content {
+        width: 100%;
+        text-align: left;
+    }
+    .p-responsive {
+        margin: 1.8rem 0;
+    }
+    /* Navbar */
+    
+    .nav-logo {
+        width: 160px;
+        height: 20px;
+    }
+    .navbar {
+        position: relative;
+      }
+      .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 220;
+      }
+      /* Adjust size of toggle menu icon */
+      .navbar-toggler {
+        font-size: 1.5rem; /* Increase icon size */
+      }
+      /* Center content in the collapsed menu */
+    .collapse.show {
+        text-align: center; /* Center-align text */
+      }
+  
+      /* Prevent logo and navbar toggler from overlapping */
+      .navbar-toggler {
+        padding: 0;
+        font-size: 1.3rem;
+        border: none;
+      }
+
+      /* Style for the burger menu button */
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1050;
+        background-color: inherit;
+        border: none;
+        padding: 0;
+        transition: all 0.3s ease-in-out;
+      }
+  
+      .burger-menu span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: var(--light-green);
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out; 
+      }
+  
+      /* Toggled state for the X transformation */
+      .burger-menu.toggled span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+        background-color: var(--dark-gray);
+      }
+  
+      .burger-menu.toggled span:nth-child(2) {
+        transform: translateY(-4px) rotate(-45deg);
+        background-color: var(--dark-gray);
+      }
+  
+      /* Smooth collapsed menu overlay */
+      .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: var(--misty-grey);
+        z-index: 200;
+        transition: transform 0.3s ease-in-out;
+      }
+      .navbar-nav {
+        margin-top: 15%;
+      }
+      .navbar a {
+        color: var(--dark-gray) !important;
+      }
+      .nav-item.dropdown {
+        justify-content: center;
+      }
+  
+      .navbar-collapse.show {
+        transform: translateY(0);
+      }
+      /* Prevent body scrolling when menu is open */
+      body.no-scroll {
+        overflow: hidden;
+      }
+      .hero-icons {
+        padding: 40px 0 0;
+      }
+      .icon-holder {
+        border: none;
+      }
+      .border-responsive {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .icon-holder {
+        justify-content: unset !important;
+      }
+      .icon-holder img {
+        width: 20px;
+        height: auto;
+    }
+      .icon-holder span {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+    .video-holder {
+        height: auto;
+    }
+    .no-padding {
+        padding: 0 !important;
+    }
+    .accordion-features {
+        padding-top: 40px;
+    }
+    .feature-accordion-content {
+        text-align: left !important;
+    }
+    .boxes-container {
+        border: none;
+    }
+    .box {
+        border: none;
+      }
+    .box-responsive {
+        padding: 0 !important;
+        margin-top: 20px;
+    }
+    .btn-solution1 {
+        margin-bottom: 30px;
+    }
+    .box-light-green {
+        width: 100%;
+        text-align: center;
+        padding: 30px 20px 50px !important;
+    }
+    .box-title {
+        padding-right: 0;
+    }
+    .btn-box {
+        padding: 16px 110px;
+    }
+    .p-contact-us br {
+        display: none !important;
+    }
+    .noMargin-responsive {
+        margin: 0 !important;
+    }
+    .contact-form input {
+        margin-bottom: 15px;
+    }
+    .contact-form textarea {
+        padding-left: 25px;
+    }
+    .btn-send.btn-small {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 30px !important;
+    }
+    .footer-responsive {
+        padding-top: 30px;
+    }
+    .footer-logo-responsive {
+        width: 160px;
+        height: auto;
+    }
+    .footer-p {
+        margin-top: 20px;
+        padding: 0 65px;
+    }
+    .footer-form {
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-form input {
+        width: 100%;
+        text-align: center;
+        padding: 10px 16px;
+        margin-bottom: 10px;
+    }
+    .footer-form .btn-small.btn-small-style {
+        width: 100%;
+        max-width: 100%;
+    }
+    .p-copyright-responsive {
+        text-align: center;
+    }
+
+
+
+    
+      
+
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    
+  }
