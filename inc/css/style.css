@@ -86,7 +86,7 @@ p {
   background-color: white;
   color: var(--dark-gray);
   border: 1px solid var(--dark-gray);
-  border-radius: 50%;
+  border-radius: 30px;
   transition: all 0.3s ease-in-out;
 }
   .btn-medium-white:hover {
@@ -101,7 +101,7 @@ p {
   background-color: var(--dark-gray);
   color: var(--light-green);
   border: 1px solid var(--dark-gray);
-  border-radius: 50%;
+  border-radius: 30px;
   transition: all 0.3s ease-in-out;
 }
   .btn-medium-dark-gray:hover {
@@ -357,47 +357,19 @@ object-fit: cover;
 }
 /* Functions */
 /* first slider */
-/* .slick-slider.second-slider {
-  margin: 20px auto;
-}
-.ui-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 10px;
-  text-align: center;
-  cursor: pointer;
-  width: 150px;
-  height: 100px;
-}
-.ui-button:hover {
-  background-color: #2e2e2e;
-} */
 
-.slick-slider.second-slider  {
-  margin: 20px auto;
-  max-width: 80%;
-  overflow: hidden;
-}
 
-.slick-slider.second-slider  {
-  text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  margin: 5px;
-  border-radius: 5px;
-}
+
 /* second slider */
+.slider .slider-height.slick-slide {
+  height: auto !important;
+}
 .slider img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
+} 
+
 /* Contact Us */
 .contact-form input, textarea {
   background-color: inherit !important;

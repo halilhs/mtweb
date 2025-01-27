@@ -180,6 +180,7 @@
     .feature-accordion-content {
         text-align: left !important;
     }
+    /* Solution 1 */
     .boxes-container {
         border: none;
     }
@@ -204,6 +205,21 @@
     .btn-box {
         padding: 16px 110px;
     }
+    /* Solution 2 */
+    .padding-responsive br {
+        display: none !important;
+    }
+    .padding-responsive p {
+      text-align: center;
+      padding-left: 60px;
+      padding-right: 60px;
+  }
+    .padding-responsive {
+      padding: 30px 0 20px;
+    }
+    /* Functions */
+    
+    /* Contact us */
     .p-contact-us br {
         display: none !important;
     }
@@ -221,6 +237,7 @@
         width: 100%;
         margin-top: 30px !important;
     }
+    /* Footer */
     .footer-responsive {
         padding-top: 30px;
     }
