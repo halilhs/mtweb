@@ -30,18 +30,18 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light position-relative">
         <div class="container">
-            <button class="burger-menu" id="burgerMenu">
-                <span></span>
-                <span></span>
-              </button>
+            <button class="burger-menu d-lg-none d-sm-block" id="burgerMenu">
+                <span class="burger-icon burger-equal">=</span>
+            </button>
 
             <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="inc/images/nav-logo.svg" alt="Logo" class="nav-logo d-inline-block align-text-top">
+                <img src="inc/images/nav-logo.svg" alt="Logo" class="nav-logo d-inline-block align-text-top visible-logo">
+                <!-- <img src="inc/images/toggle-logo.png" alt="Logo" class="nav-logo d-inline-block align-text-top hidden-logo"> -->
             </a>
             <!-- Menu items -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav nav-responsive ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about_us">About us</a>
                     </li>
@@ -944,56 +944,62 @@
     <script src="inc/js/scripts.js"></script>
     <script>
         $(document).ready(function () {
-            $('#navbarNav').on('shown.bs.collapse', function () {
-                // Add the class when the menu is open
-                $('.navbar-brand img').addClass('menu-open-logo');
-            });
-
-            $('#navbarNav').on('hidden.bs.collapse', function () {
-                // Remove the class when the menu is closed
-                $('.navbar-brand img').removeClass('menu-open-logo');
-            });
-
-
-            const $burgerMenu = $('#burgerMenu');
             const $navbarNav = $('#navbarNav');
-            const $body = $('body');
+    const $burgerMenu = $('#burgerMenu');
+    const $burgerIcon = $('.burger-icon');
+    const $logo = $('.navbar-brand img');
 
-        // Toggle menu
-        $burgerMenu.on('click', function () {
-            $(this).toggleClass('toggled');
-            $navbarNav.toggleClass('show');
-            $body.toggleClass('no-scroll'); // Prevent scrolling when menu is open
-        });
+    $burgerMenu.click(function () {
+        if ($navbarNav.is(':visible')) {
+            // Smoothly hide the menu
+            $navbarNav.stop().slideUp(200, function () {
+                $burgerIcon
+                    .text('=')
+                    .removeClass('burger-x')
+                    .addClass('burger-equal'); // Switch to "=" and its styling
+                    // $logo.removeClass('hidden-logo').addClass('visible-logo');
+                });
+        } else {
+            // Smoothly show the menu
+            $navbarNav.stop().slideDown(200, function () {
+                $burgerIcon
+                    .text('X')
+                    .removeClass('burger-equal')
+                    .addClass('burger-x'); // Switch to "X" and its styling
+                    // $logo.removeClass('visible-logo').addClass('hidden-logo');
+                });
+        }
+    });
 
-          $('.accordion-button').on('click', function () {
-            const icon = $(this).find('.toggle-icon');
-            if ($(this).hasClass('collapsed')) {
-              icon.text('+');
-            } else {
-              icon.text('−');
-            }
-          });
-        // second slider at the +100 functions section
-          $('.slider').slick({
-            // dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1.1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            arrows: true,
-            responsive: [
-                    {
-                        breakpoint: 768, // Adjust for mobile devices
-                        settings: {
-                            arrows: false, // Hide arrows
-                            dots: true     // Show dots
-                        }
-                    }
-                ]
+
+            $('.accordion-button').on('click', function () {
+                const icon = $(this).find('.toggle-icon');
+                if ($(this).hasClass('collapsed')) {
+                icon.text('+');
+                } else {
+                icon.text('−');
+                }
             });
+            // second slider at the +100 functions section
+            $('.slider').slick({
+                // dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1.1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                responsive: [
+                        {
+                            breakpoint: 768, // Adjust for mobile devices
+                            settings: {
+                                arrows: false, // Hide arrows
+                                dots: true     // Show dots
+                            }
+                        }
+                    ]
+                });
 
 
         });
