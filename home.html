@@ -85,12 +85,13 @@
                 </div>
                 <div class="col-md-6 p-0 col-sm-6">
                     <div class="hero-image-holder">
-                         <img src="/inc/images/first-hero-img.svg" alt="Hero Image 1">
+                        <img src="/inc/images/first-hero-img.svg" class="d-none d-lg-block" alt="Hero Image 1">
+                        <img src="/inc/images/hero-img-mobile.png" class="d-lg-none d-sm-block" alt="Hero Image 1">
                     </div>
                 </div>
                 <div class="col-md-6 p-0 col-sm-6">
                     <div class="hero-image-holder">
-                        <img src="/inc/images/second-hero-img.svg" alt="Hero Image 2">                      
+                        <img src="/inc/images/second-hero-img.svg" class="d-none d-lg-block" alt="Hero Image 2">                      
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
@@ -353,14 +354,20 @@
             <!-- First Row -->
             <div class="row align-items-center">
               <div class="col-md-4 col-12 order-2 order-lg-1 p-0 text-center">
-                <img src="/inc/images/solution2-1.png" alt="Solution img" class="img-fluid">
+                <div class="solution2-img-holder">
+                    <img src="/inc/images/solution2-mobile.png" class="d-none d-lg-block" alt="Solution img">
+                    <img src="/inc/images/solution2-mobile-responsive.png" class="d-lg-none d-sm-block mt-4" alt="Solution img">
+
+                </div>
               </div>
               <div class="col-md-4 col-12 order-1 order-lg-2 text-center">
                 <h5>Solutions</h5>
                 <h2>AI Native Invoicing</h2>
               </div>
               <div class="col-md-4 col-12 d-none d-lg-block order-lg-3 p-0 text-center">
-                <img src="/inc/images/solution2-3.png" alt="Solution img" class="img-fluid">
+                <div class="solution2-img-holder">
+                    <img src="/inc/images/solution2-3.png" alt="Solution img">
+                </div>
               </div>
             </div>
         
@@ -373,7 +380,9 @@
                 <img src="/inc/images/solution2-2.png" alt="Solution 3" class="img-fluid">
               </div>
               <div class="col-md-4 col-12 d-lg-none d-sm-block order-4 p-0 text-center">
-                <img src="/inc/images/solution2-3.png" alt="Solution img" class="img-fluid">
+                <div class="solution2-img-holder">
+                    <img src="/inc/images/solution-chat-img.png" alt="Solution img" class="img-fluid"> 
+                </div>
               </div>
               <div class="col-md-4 col-12 order-lg-3 order-5 padding-responsive text-center">
                 <button class="btn-medium-white mb-3">Enter your work email</button>
