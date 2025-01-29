@@ -142,7 +142,9 @@ p {
   color: white;
   padding: 15px 0;
 }
-
+.hidden-logo {
+  display: none;
+}
 .nav-logo {
   width: 200px;
   height: 25px;

@@ -172,17 +172,14 @@
         align-items: center;
       }
 
-      /* .visible-logo {
-        display: block; 
-        transition: opacity 0.2s ease-in-out; 
-        width: 100px;
-        height: auto;
-    } */
+      .visible-logo {
+        display: block;
+        transition: opacity 0.2s ease-in-out, visibility 0.2s;
+    }
     
-    /* State when the logo is hidden */
     .hidden-logo {
-        display: none; /* Hide logo */
-        transition: opacity 0.2s ease-in-out;
+        display: none;
+        transition: opacity 0.2s ease-in-out, visibility 0.2s;
     }
 
       /* Hero section */

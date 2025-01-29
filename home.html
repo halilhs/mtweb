@@ -36,8 +36,8 @@
 
             <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img src="inc/images/nav-logo.svg" alt="Logo" class="nav-logo d-inline-block align-text-top visible-logo">
-                <!-- <img src="inc/images/toggle-logo.png" alt="Logo" class="nav-logo d-inline-block align-text-top hidden-logo"> -->
+                <img src="inc/images/nav-logo.svg" alt="Logo" class="logo1 nav-logo visible-logo">
+                <img src="inc/images/toggle-logo.png" alt="Logo" class="logo2 nav-logo hidden-logo">
             </a>
             <!-- Menu items -->
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -945,31 +945,34 @@
     <script>
         $(document).ready(function () {
             const $navbarNav = $('#navbarNav');
-    const $burgerMenu = $('#burgerMenu');
-    const $burgerIcon = $('.burger-icon');
-    const $logo = $('.navbar-brand img');
+            const $burgerMenu = $('#burgerMenu');
+            const $burgerIcon = $('.burger-icon');
+            const $logo1 = $('.navbar-brand img.logo1'); // First image
+            const $logo2 = $('.navbar-brand img.logo2'); // Second image
 
-    $burgerMenu.click(function () {
-        if ($navbarNav.is(':visible')) {
-            // Smoothly hide the menu
-            $navbarNav.stop().slideUp(200, function () {
-                $burgerIcon
-                    .text('=')
-                    .removeClass('burger-x')
-                    .addClass('burger-equal'); // Switch to "=" and its styling
-                    // $logo.removeClass('hidden-logo').addClass('visible-logo');
-                });
-        } else {
-            // Smoothly show the menu
-            $navbarNav.stop().slideDown(200, function () {
-                $burgerIcon
-                    .text('X')
-                    .removeClass('burger-equal')
-                    .addClass('burger-x'); // Switch to "X" and its styling
-                    // $logo.removeClass('visible-logo').addClass('hidden-logo');
-                });
-        }
-    });
+            $burgerMenu.click(function () {
+                if ($navbarNav.is(':visible')) {
+                    // Smoothly hide the menu
+                    $navbarNav.stop().slideUp(200, function () {
+                        $burgerIcon
+                            .text('=')
+                            .removeClass('burger-x')
+                            .addClass('burger-equal'); // Switch to "=" and its styling
+                            $logo1.removeClass('hidden-logo').addClass('visible-logo'); // Show first logo
+                            $logo2.removeClass('visible-logo').addClass('hidden-logo'); // Hide second logo
+                        });
+                } else {
+                    // Smoothly show the menu
+                    $navbarNav.stop().slideDown(200, function () {
+                        $burgerIcon
+                            .text('X')
+                            .removeClass('burger-equal')
+                            .addClass('burger-x'); // Switch to "X" and its styling
+                            $logo1.removeClass('visible-logo').addClass('hidden-logo'); // Hide first logo
+                            $logo2.removeClass('hidden-logo').addClass('visible-logo'); // Show second logo
+                        });
+                }
+            });
 
 
             $('.accordion-button').on('click', function () {
